@@ -22,24 +22,18 @@ console.log(total);
 
 // Завдання 5
 let arrStringWords = ["HTML", "CSS", "SCSS", "Bootstrap", "JavaScript"];
-const arrStringLength = arrStringWords.length;
-const arrStringLength1 = arrStringWords[0].length;
-const arrStringLength2 = arrStringWords[1].length;
-const arrStringLength3 = arrStringWords[2].length;
-const arrStringLength4 = arrStringWords[3].length;
-const arrStringLength5 = arrStringWords[4].length;
-if (arrStringLength4 > 5 && arrStringLength5 > 5) {
-  console.log(`Текст "Bootstrap і JavaScript" більше ніж 5-ти символів`);
-} 
+for (let i = 0; i < arrStringWords.length; i = i + 1) {
+  let arrStringWord = arrStringWords[i].length;
+  if (arrStringWord > 5) {
+    console.log(`Текст "Bootstrap і JavaScript" більше ніж 5-ти символів`);
+  }
+}
 
 // Завдання 6
-console.log(arrStringLength5);
 const arrMaxNumbers = [42, 25, 16, 31, 28, 9, 20, 39, 48, 34];
 let filter = [];
-for (let maxNumber of arrMaxNumbers) {
-  if (Math.max(maxNumber)) {
-    filter.push(maxNumber);
-  }
+if (Math.max(arrMaxNumbers)) {
+  filter.push(arrMaxNumbers);
 }
 console.log(filter);
 
